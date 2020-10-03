@@ -7,6 +7,23 @@
     height: 50vh;
 }
 
-.display-4 {
-    font-size: 40px;
+
+/* @media (min-width: 768px) {
+    .display-4 {
+        font-size: 2rem !important; 
+    }
 }
+
+
+@media (min-width: 992px) {
+    .display-4 {
+        font-size: 6rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+} */
