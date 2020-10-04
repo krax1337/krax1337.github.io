@@ -51,7 +51,8 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4" style="font-size: 2rem;">Zhescom - облачное видеонаблюдения</h1>
-            <p style="font-size: 20px; text-align: left;">Профессиональная установка и настройка систем онлайн видеонаблюдения</p>
+            <p style="font-size: 20px; text-align: left;">Профессиональная установка и настройка систем онлайн
+                видеонаблюдения</p>
             <a href="https://wa.me/77081148202" target="_blank" type="button" class="btn btn-success">Связаться с нами
                 <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         </div>
@@ -107,8 +108,8 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-7">
-                    <h3 class="display-4">
+                <div class="col-md-7 ">
+                    <h3 class="display-4 featurette-heading">
                         Мы доверяем только лучшим производителям
                     </h3>
                     <ul class="list-group">
@@ -130,8 +131,8 @@
 
             <div>
                 <h3 class="display-4 d-flex justify-content-center">Как это работает?</h3>
-                <img src="./assets/img/Как-работает-видеонаблюдение.png" class="img-fluid rounded mx-auto d-block"
-                    alt="" style="margin: 20px; border-radius: 5%;">
+                <img id="myImg" src="./assets/img/Как-работает-видеонаблюдение.png" class="img-fluid rounded mx-auto d-block"
+                    alt="" style="margin: 20px; border-radius: 5%;" onclick="onClick(this)">
             </div>
 
             <h3 class="display-4 d-flex justify-content-center">Какие камеры мы ставим?</h3>
@@ -173,9 +174,44 @@
 
 
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
 
-    <a href="tel:+77081148202" id="callnowbutton" onclick="ga('send', 'event', 'Contact', 'Call Now Button', 'Phone');"> <i class="fa fa-phone" aria-hidden="true" style="padding: 10px;"></i>Связаться с нами</a>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+    <a href="tel:+77081148202" id="callnowbutton" onclick="ga('send', 'event', 'Contact', 'Call Now Button', 'Phone');">
+        <i class="fa fa-phone" aria-hidden="true" style="padding: 10px;"></i>Связаться с нами</a>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
