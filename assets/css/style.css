@@ -5,8 +5,71 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+    margin-bottom: 10px;
 }
 
+.display-4 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #callnowbutton {
+        display: block;
+        position: fixed;
+        text-decoration: none;
+        z-index: 214748;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 60px;
+        border-top: 1px solid #ff2d2d;
+        border-bottom: 1px solid #cd0000;
+        text-shadow: 0 1px #cd0000;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 170%;
+        overflow: hidden;
+        padding-right: 20px;
+        background: #ff0000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+/* img {
+    border-radius: 10%;
+} */
+
+/* #img-1 {
+    height: 200px;
+} */
+
+body {
+    /* background-image: url("../img/moroccan-flower.png"); */
+}
+
+/* #carouselExampleControls {
+    height: 50px;
+} */
+
+/* .carousel-inner {
+    height: 200px;
+    position: absolute;
+    height: 50px;
+} */
+
+.imgs {
+    width: 10rem;
+}
 
 /* @media (min-width: 768px) {
     .display-4 {
